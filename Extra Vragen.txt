@@ -1,0 +1,2 @@
+- Taal van het document?
+- Welke versioning tool (svn of git)
