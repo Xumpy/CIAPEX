@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.tsl.thuisadmin</groupId>
+	<artifactId>plsqltest</artifactId>
+	<packaging>jar</packaging>
+	<version>1.0-thuisadmin</version>
+	<name>thuisadmin</name>
+  
+  <properties>
+    <ojdbc.groupId>com.oracle</ojdbc.groupId>
+    <ojdbc.artifactId>ojdbc6</ojdbc.artifactId>
+    <ojdbc.version>11.1.0.7</ojdbc.version>
+  
+    <jdbc.driverClassName>oracle.jdbc.driver.OracleDriver</jdbc.driverClassName>
+    <jdbc.url>jdbc:oracle:thin:@192.168.1.1:1521:orcl</jdbc.url>
+    <jdbc.username>dev_thuisadmin</jdbc.username>
+    <jdbc.password>thuisadmin</jdbc.password>
+    
+    <liquibase.prompt>false</liquibase.prompt>
+    <liquibase.verbose>false</liquibase.verbose>
+  </properties>
+  
+	<build>
+    <plugins>
+      <plugin>
+        <groupId>org.liquibase</groupId>
+        <artifactId>liquibase-maven-plugin</artifactId>
+        <version>2.0.4</version>
+        
+        <dependencies>
+          <dependency>
+            <groupId>${ojdbc.groupId}</groupId>
+            <artifactId>${ojdbc.artifactId}</artifactId>
+            <version>${ojdbc.version}</version>
+          </dependency>
+        </dependencies>
+
+		<configuration>
+          <changeLogFile>src/main/changelog/master.xml</changeLogFile>
+          <driver>${jdbc.driverClassName}</driver>
+		  <url>${jdbc.url}</url>
+		  <username>${jdbc.username}</username>
+		  <password>${jdbc.password}</password>
+		  <promptOnNonLocalDatabase>${liquibase.prompt}</promptOnNonLocalDatabase>
+		  <verbose>${liquibase.verbose}</verbose>
+		</configuration>
+		
+        <executions>
+			<execution>
+				<id>update</id>
+				<phase>process-resources</phase>
+				<goals>
+					<goal>update</goal>
+				</goals>
+			</execution>
+			<execution>
+				<id>rollback</id>
+				<goals>
+					<goal>rollback</goal>
+				</goals>
+			</execution>
+        </executions>
+      </plugin>
+    </plugins>
+	</build>
+</project>
