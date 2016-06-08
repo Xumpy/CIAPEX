@@ -30,26 +30,26 @@
           </dependency>
         </dependencies>
 
-		<configuration>
+	<configuration>
           <changeLogFile>src/main/master.xml</changeLogFile>
           <driver>${jdbc.driverClassName}</driver>
-		  <url>${jdbc.url}</url>
-		  <username>${jdbc.username}</username>
-		  <password>${jdbc.password}</password>
-		  <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
-		  <verbose>false</verbose>
-		</configuration>
+	  <url>${jdbc.url}</url>
+	  <username>${jdbc.username}</username>
+	  <password>${jdbc.password}</password>
+	  <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
+	  <verbose>false</verbose>
+	</configuration>
 		
         <executions>
-			<execution>
-				<id>update</id>
-				<phase>process-resources</phase>
-				<goals>
-					<goal>update</goal>
-				</goals>
-			</execution>
+  	  <execution>
+	    <id>update</id>
+	    <phase>process-resources</phase>
+	    <goals>
+	      <goal>update</goal>
+	    </goals>
+	  </execution>
         </executions>
       </plugin>
     </plugins>
-	</build>
+  </build>
 </project>
