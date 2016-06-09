@@ -8,4 +8,16 @@
   <changeSet id="create_addresses" author="nico_martens">
     <sqlFile path="src/main/sql/addresses.sql"/>
   </changeSet>
+  <changeSet id="create_seq_persons" author="nico_martens">
+    <sqlFile path="src/main/sql/seq_persons.sql"/>
+  </changeSet>
+  <changeSet id="create_seq_addresses" author="nico_martens">
+    <sqlFile path="src/main/sql/seq_addresses.sql"/>
+  </changeSet>
+  <changeSet id="trigger_br_i_persons" author="nico_martens" runOnChange="true" runAlways="true">
+    <sqlFile splitStatements="false" path="src/main/plsql/trigger_br_i_persons.sql"/>
+  </changeSet>
+  <changeSet id="trigger_br_i_addresses" author="nico_martens" runOnChange="true" runAlways="true">
+    <sqlFile splitStatements="false" path="src/main/plsql/trigger_br_i_addresses.sql"/>
+  </changeSet>
 </databaseChangeLog>
