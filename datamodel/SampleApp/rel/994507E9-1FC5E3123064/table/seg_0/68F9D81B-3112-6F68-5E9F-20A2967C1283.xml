@@ -1,0 +1,70 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="68F9D81B-3112-6F68-5E9F-20A2967C1283" name="PERSONS">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:39:05 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PK_ID" id="066ABC8E-B7DF-D769-D040-489B635585A6">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:39:19 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIRST_NAME" id="E7B291C9-C1E1-CFC7-FE56-E1DEF951F091">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:39:48 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_NAME" id="D96B4DC4-77D4-F6B8-ACA1-A566F2AC8AA9">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:39:48 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BIRTH_DATE" id="4BDD90FB-B0C8-7A20-3F50-43351D620B41">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:39:48 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="54477808-9A4F-63F7-DBE1-67319F5F3848" name="PERSONS_PK">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:39:19 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="066ABC8E-B7DF-D769-D040-489B635585A6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

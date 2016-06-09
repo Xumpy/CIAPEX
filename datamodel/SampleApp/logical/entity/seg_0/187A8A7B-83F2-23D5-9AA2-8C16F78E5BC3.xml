@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="187A8A7B-83F2-23D5-9AA2-8C16F78E5BC3" name="PERSONS">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:34:25 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<engineerTo>
+<item key="994507E9-3820-FB7F-E414-1FC5E3123064" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="PK_ID" id="A9967FD4-6BAF-544A-716A-F1CA274BC9D3">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:34:36 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<engineerTo>
+<item key="994507E9-3820-FB7F-E414-1FC5E3123064" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="FIRST_NAME" id="6865EE53-5F23-CB6D-44BD-05FCF3059552">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:34:43 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<engineerTo>
+<item key="994507E9-3820-FB7F-E414-1FC5E3123064" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="LAST_NAME" id="C9C2DF81-5AD4-888F-B86D-733EBCBF587D">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:34:51 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<engineerTo>
+<item key="994507E9-3820-FB7F-E414-1FC5E3123064" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BIRTH_DATE" id="30AE7D0E-EB99-DC81-A94C-AAD1B00FAC64">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:34:58 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<engineerTo>
+<item key="994507E9-3820-FB7F-E414-1FC5E3123064" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A5FDECBE-73EA-0BB5-2A1B-0079DE13C3B5" name="PERSONS PK">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:35:45 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<engineerTo>
+<item key="994507E9-3820-FB7F-E414-1FC5E3123064" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A9967FD4-6BAF-544A-716A-F1CA274BC9D3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

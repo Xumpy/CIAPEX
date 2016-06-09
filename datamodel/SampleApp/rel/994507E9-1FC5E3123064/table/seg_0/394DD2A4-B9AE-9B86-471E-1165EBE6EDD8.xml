@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="394DD2A4-B9AE-9B86-471E-1165EBE6EDD8" name="ADDRESSES">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:40:23 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<ordsAlias>table_4</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PK_ID" id="226B643B-3678-25E3-BEFB-635864EFA137">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:41:29 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STREET_NAME" id="079B0926-C249-BEC8-E6AE-48CD1D363DE8">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:41:29 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STREET_NUMBER" id="6CF9BB34-E95C-BCC0-D8BD-79F3A3C9007E">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:41:29 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="STREET_BUS" id="BFDD9EA3-5EB9-3686-E67D-CB21A667EA58">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:41:29 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CITY" id="8E80711E-E0D7-8E10-4583-16F7015FE5C1">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:41:29 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="POSTAL_CODE" id="F88E8727-3A45-9054-5602-97E41014014F">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:41:29 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNTRY" id="19CD598A-0FC9-1E54-F4EC-106790253E49">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:41:29 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PERSONS_PK_ID" id="29542524-21D3-CE02-24E2-7ABE7C2C48ED">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:42:04 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A0405861-21B8-F514-7F25-2BAFC6B7955F" referredColumn="066ABC8E-B7DF-D769-D040-489B635585A6"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7423639F-9A7B-B8A0-E34D-129FED8990A7" name="ADDRESSES_PK">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:41:45 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="226B643B-3678-25E3-BEFB-635864EFA137"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CD75FF1-16CB-AB28-1B9C-5D4E14995D83" name="ADDRESSES_PERSONS_FK">
+<createdBy>nico</createdBy>
+<createdTime>2016-06-09 10:42:04 UTC</createdTime>
+<ownerDesignName>SampleApp</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29542524-21D3-CE02-24E2-7ABE7C2C48ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
